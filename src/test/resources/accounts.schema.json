@@ -4,7 +4,7 @@
   "items": {
     "type": "object",
     "required": [
-
+      "id",
       "name",
       "number",
       "balance",
@@ -12,9 +12,7 @@
     ],
     "additionalProperties": false,
     "properties": {
-      "id": {
-        "type": "integer"
-      },
+
       "name": {
         "type": "string",
         "minLength": 1
