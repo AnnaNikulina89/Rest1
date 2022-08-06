@@ -12,7 +12,9 @@
     ],
     "additionalProperties": false,
     "properties": {
-
+      "id": {
+        "type": "integer"
+      },
       "name": {
         "type": "string",
         "minLength": 1
