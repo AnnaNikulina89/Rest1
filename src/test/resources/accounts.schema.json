@@ -27,9 +27,15 @@
         "type": "integer"
       },
       "currency": {
-        "type": "string"
-      },
-      "required": ["currency", "RUB", "USD"]
+        "type": "string",
+        "patternProperties": {
+
+          "RUB": { "type": "string" },
+          "USD": { "type": "string" },
+          "%": false
+        }
+      }
+
     }
   }
 }
