@@ -15,10 +15,7 @@
       "id": {
         "type": "integer"
       },
-      "name": {
-        "type": "string",
-        "minLength": 1
-      },
+
       "number": {
         "type": "string",
         "pattern": "^•• \\d{4}$"
