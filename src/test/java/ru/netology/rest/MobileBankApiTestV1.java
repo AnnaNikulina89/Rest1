@@ -8,7 +8,6 @@ import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 
-
 class MobileBankApiTestV1 {
     @Test
     void shouldReturnDemoAccounts() {
@@ -22,13 +21,10 @@ class MobileBankApiTestV1 {
                 // Проверки
                 .then()
                 .statusCode(200)
-        .body(matchesJsonSchemaInClasspath("accounts.schema.json"));
-
+                .body(matchesJsonSchemaInClasspath("accounts.schema.json"));
 
 
     }
-
-
 
 
 }
